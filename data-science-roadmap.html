@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - علم البيانات، تحليل البيانات، وتعلم الآلة</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #d1fbfd; /* تغيير لون الخلفية إلى فاتح */
+      color: #333; /* تغيير لون النص إلى لون أغمق للتباين */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('pexels-energepic-com-27411-159888.jpg') no-repeat center center/cover fixed;
+      color: #fdf3d1;
+      text-shadow: 4px 4px 4px black;
+      height: 50vh;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+
+    .taref {
+      font-size: 20px;
+    }
+
+    .learning-roadmap {
+      background: #d1fdfd; /* لون خلفية فاتح لقسم الخريطة */
+      padding: 40px 20px;
+      border-radius: 8px; /* إضافة زوايا مدورة */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    }
+
+    .learning-roadmap a {
+      color: #20b5c9;
+    }
+
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333; /* لون النص في خريطة التعلم */
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 100px auto;
+      padding: 100px auto;
+    }
+
+    .roadmap-step {
+      background: rgba(0, 169, 236, 0.13); /* لون خلفية خفيف لكل خطوة */
+      border: 1px solid rgba(0, 0, 0, 0.1); /* حدود خفيفة حول كل خطوة */
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .roadmap-step h3 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+
+    .sources {
+      background: #f9f9f9; /* خلفية فاتحة */
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      margin-bottom: 0;
+    }
+
+    .sources h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sources ul {
+      list-style-type: none; /* بدون نقاط */
+      padding-left: 0; /* إزالة الهوامش */
+    }
+
+    .sources li {
+      margin: 10px 0; /* هوامش للقائمة */
+      width: 40%;
+    }
+
+    .sources a {
+      color: #17aaaa; /* لون الروابط */
+      text-decoration: none; /* إزالة التنسيق الافتراضي */
+    }
+
+    .sources a:hover {
+      text-decoration: underline; /* إضافة التسطير عند التمرير */
+    }
+
+    .sources-li {
+      line-height: 2;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link-section {
+      margin-top: 10px;
+      background: transparent;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .link-section a {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- الشريط العلوي -->
+  <div style="background-image: url(pexels-energepic-com-27411-159888.jpg); height: 50vh; position: relative; width: 100%; display: inline-block;">
+    <header id="home" style="height: 70px; display: inline-block; background-image: url(pexels-energepic-com-27411-159888.jpg);">
+      <div class="overlay">
+        <div class="content" style="padding-top: 20px;">
+          <nav>
+            <h3 class="logo">data science</h3>
+            <ul class="navbar">
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+              <li class="li-nav"><a href="blog.html">المدونة</a></li>
+              <li class="li-nav dropdown" >
+                <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                <ul class="dropdown-menu"> 
+                   <li><a href="cyber-security-roadmap.html">الامن السيبراني</a></li>
+                   <li><a href="game-dev-roadmap.html">تطوير الالعاب</a></li>
+                   <li><a href="web-dev.html">تطوير مواقع الويب</a></li>
+                   <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                   <li><a href="ai-roadmap.html">الذكاء الاصطناعي</a></li>
+                </ul>
+            </ul>
+          </nav>
+        <div class="hero">  
+          <h1>خريطة تعلم علم البيانات، تحليل البيانات، وتعلم الآلة</h1>
+          <p>خطوات محددة لتعلم المهارات الأساسية في هذه المجالات المختلفة.</p>
+        </div></div>
+      </div>
+        </div>
+      </div>
+    </header>
+    <!-- القسم الرئيسي -->
+      
+  </div>
+
+  <!-- قسم علم البيانات -->
+  <section class="learning-roadmap">
+    <div class="container">
+      <h2>1. علم البيانات</h2>
+      <p class="taref">عِلم البيانات هو دراسة البيانات لاستخراج رؤىً هادفة للأعمال من خلال تحليل كميات كبيرة من البيانات.</p>
+      
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- معرفة ماهية علم البيانات</strong></p>
+        <p><strong>- أساسيات البرمجة.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.codecademy.com/learn/learn-python-3">Codecademy - تعلم بايثون</a>
+          <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">DataCamp - مقدمة في بايثون لعلوم البيانات</a>
+        </div>
+
+        <p><strong>- أساسيات الإحصاء والرياضيات.</strong></p>
+        <div class="link-section">
+          <strong>كتب ومراجع:</strong>
+          <a href="https://www.amazon.com/Practical-Statistics-Data-Scientists/dp/1491952959">Practical Statistics for Data Scientists</a>
+        </div>
+
+        <p><strong>- قواعد البيانات وSQL.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.w3schools.com/sql/">W3Schools - SQL Tutorial</a>
+        </div>
+
+        <p><strong>- تصور البيانات.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.coursera.org/learn/data-visualization">Coursera - تعلم تصور البيانات</a>
+        </div>
+
+        <p><strong>- أسس تعلم الآلة.</strong></p>
+        <div class="link-section">
+          <strong>كتب ومراجع:</strong>
+          <a href="https://www.amazon.com/Machine-Learning-Yearning-Technical-Strategy/dp/0996025628">Machine Learning Yearning</a>
+        </div>
+
+        <p><strong>- مشاريع صغيرة.</strong></p>
+      </div>
+
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- التحليل البياني المتقدم.</strong></p>
+        <div class="link-section">
+          <strong>كتب ومراجع:</strong>
+          <a href="https://www.amazon.com/Practical-Statistics-Data-Scientists/dp/1491952959">Practical Statistics for Data Scientists</a>
+        </div>
+
+        <p><strong>- تعلم الآلة المتقدم.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.coursera.org/learn/machine-learning">Machine Learning by Stanford University</a>
+        </div>
+
+        <p><strong>- إدارة وتحضير البيانات.</strong></p>
+        <p><strong>- تصوير البيانات المتقدم.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.tableau.com/learn/training">Tableau - دورة تدريبية مجانية</a>
+        </div>
+
+        <p><strong>- مشاريع متوسطة.</strong></p>
+      </div>
+
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- تقنيات البيانات الكبيرة.</strong></p>
+        <div class="link-section">
+          <strong>روابط دورات:</strong>
+          <a href="https://www.coursera.org/specializations/big-data">Coursera - اختصاص البيانات الكبيرة</a>
+        </div>
+
+        <p><strong>- تحليل البيانات واتخاذ القرارات.</strong></p>
+
+        <p><strong>- النمذجة المتقدمة.</strong></p>
+        <div class="link-section">
+          <strong>كتب ومراجع:</strong>
+          <a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning by Ian Goodfellow</a>
+        </div>
+
+        <p><strong>- مشاريع متقدمة.</strong></p>
+      </div>
+
+  <!-- قسم تحليل البيانات الضخمة -->
+      <h2>2. تحليل البيانات الضخمة</h2>
+      <p class="taref">تحليلات البيانات الضخمة هي عملية البحث في مجموعات بيانات ضخمة عن الأنماط والاتجاهات والعلاقات. تتطلب هذه التحليلات أدوات وتقنيات معينة، وقدرة حوسبية وتخزين بيانات يدعم التوسع.</p>
+      
+      <div class="roadmap-step">
+          <h3>مستوى مبتدئ:</h3>
+          <p><strong>- فهم المفاهيم الأساسية لتعريف البيانات الضخمة ومميزاتها.</strong></p>
+          <p><strong>- الفرق بين هيكلية البيانات وغير الهيكلية. أنواع البيانات، مثل البيانات العددية، الصور، والفيديو.</strong></p>
+          <p><strong>- تطوير المهارات الأساسية: تعلم أساسيات إحصائيات البيانات وإجراءات البرمجة بلغة R أو Python.</strong></p>
+          <p><strong>- أدوات البيانات الضخمة: تعلم حماية البيانات عن أدوات تحليل البيانات مثل Excel وجداول بيانات جوجل. فهم Apache Hadoop أو PySpark بشكل أساسي.</strong></p>
+          <p><strong>- تعلم SQL وكيفية استعلام البيانات.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <ul>
+              <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متخصصة من جامعات مرموقة.</a></li>
+              <li><a href="https://www.udacity.com/" target="_blank">Udacity - يقدم Nanodegree في علوم البيانات.</a></li>
+              <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy - محتوى تعليمي مجاني لمواضيع الرياضيات.</a></li>
+          </ul>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متوسط:</h3>
+          <p><strong>- تعميق المعرفة في تحليل البيانات: تعلم تقنيات التحليل المتقدم مثل الانحدار والتحليل العنقودي.</strong></p>
+          <p><strong>- استخدام أدوات متقدمة مثل Apache Spark، Pig أو Hive.</strong></p>
+          <p><strong>- تعلم كيفية التعامل مع أدوات التخزين مثل Hadoop Distributed File System (HDFS).</strong></p>
+          <p><strong>- تحسين المهارات البرمجية في المكتبات مثل Pandas، Scikit-learn، NumPy، Seaborn وMatplotlib.</strong></p>
+          <p><strong>- تعلم أدوات التحليل البصري مثل Power BI أو Tableau.</strong></p>
+          <p><strong>- إنشاء لوحات بيانات (Dashboards) وتصميم المشاريع المتوسطة الداخلية.</strong></p>
+          <p><strong>الماتريل والدورات:</strong></p>
+          <ul>
+              <li><a href="https://www.edx.org/" target="_blank">edX - دورات في علوم البيانات وتحليل البيانات الضخمة.</a></li>
+              <li><a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning - دورات تفاعلية.</a></li>
+          </ul>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متقدم:</h3>
+          <p><strong>- تعلم تقنيات مثل التعلم العميق وتحليل الشبكات (Network Analysis).</strong></p>
+          <p><strong>- دراسة بنى بيانات مثل Apache Flink وApache Kafka وMapReduce.</strong></p>
+          <p><strong>- فهم القضايا الخصوصية والأخلاقيات المتعلقة بالبيانات.</strong></p>
+          <p><strong>- استخدام Apache Airflow لجدولة المهام.</strong></p>
+          <p><strong>- تعلم كيفية تطوير النماذج المبتكرة باستخدام PyTorch أو TensorFlow.</strong></p>
+          <p><strong>- مشاريع متقدمة تتطلب تحليل بيانات ضخمة ونشر التطورات في بيئات الإنتاج.</strong></p>
+          <p><strong>الماتريل والدورات:</strong></p>
+          <ul>
+              <li><a href="https://www.udacity.com/" target="_blank">Udacity - Nanodegree في تحليل البيانات.</a></li>
+              <li><a href="https://aws.amazon.com/ar/what-is/data-analytics" target="_blank">AWS - معلومات حول تحليلات البيانات.</a></li>
+          </ul>
+      </div>
+
+  <!-- قسم هندسة البيانات -->
+      <h2>3. هندسة البيانات</h2>
+      <p class="taref">هندسة البيانات هي إطار منظم لأصول البيانات وتحدد كيفية تدفق البيانات من خلال أنظمة تكنولوجيا المعلومات الخاصة بها. يوفر أساسًا لإدارة البيانات، ويوضح كيفية جمعها وتكاملها وتحويلها وتخزينها وتوزيعها عبر منصات مختلفة.</p>
+
+      <div class="roadmap-step">
+          <h3>مستوى مبتدئ:</h3>
+          <p><strong>- تعلم أساسيات لغات البرمجة، مثل Python و SQL.</strong></p>
+          <p><strong>- مفاهيم أساسية في قواعد البيانات (SQL و NoSQL).</strong></p>
+          <p><strong>- أدوات تحليل البيانات الأساسية مثل NumPy و Pandas و Matplotlib و Seaborn.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://www.coursera.org/courses?query=data%20engineering">Coursera - كورسات هندسة البيانات</a>
+              <a href="https://www.m3aarf.com/blog/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%AF%D9%8A%D9%84-8%B4%D8%B1%D9%83%D8%A9D%-%D9%85%D8%AC%D8%A7%D9%84-9%81%D9%8AD%-9%87%D9%86%D8%AF%D8%B3%D8%A9D%-8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AAD%-9%84%D8%B7%D9%84%D8%A7%D8%A8D%-8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9D%9%88%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8D%%AA">معارف - دورات تدريبة</a>
+          </div>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متوسط:</h3>
+          <p><strong>- أدوات جمع البيانات: APIs، Web Scraping، ETL Tools.</strong></p>
+          <p><strong>- أدوات تخزين البيانات: Hadoop، Spark، Cloud Storage.</strong></p>
+          <p><strong>- أدوات تحويل البيانات: SQLAlchemy، أدوات تدفق البيانات مثل Apache Kafka.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://www.for9a.com/courses/%D8%AF%D9%88%D8%B1%D8%A9-%D9%84%D8%A7%D9%8A%D9%86-8%A3%D9%88%D9%86D%-%D9%85%D9%86-9%م%D8%AC%D8%A7%D9%86%D9%8A%D8%A9D%-%D9%87%D9%86%D8%AF%D8%B3%D8%A9-atacampD">فرصة - دورات مجانية</a>
+          </div>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متقدم:</h3>
+          <p><strong>- أدوات التعلم الآلي: Scikit-learn، TensorFlow، PyTorch.</strong></p>
+          <p><strong>- أدوات السحابة: AWS، Google Cloud Platform، Azure.</strong></p>
+          <p><strong>- أدوات البنية التحتية: Docker، Kubernetes.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://dlarabic.com/%D8%AE%D8%A7%D8%B1%D8%B7%D8%A9-8%B7%D8%B1%D9%8A%D9%82D%-9%87%D9%86%D8%AF%D8%B3%D8%A9D%-data-8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AAD%roadmap-ngineeringe/">المواد المستخدمة لهندسة البيانات</a>
+          </div>
+      </div>
+
+  <!-- قسم إدارة البيانات -->
+      <h2>4. إدارة البيانات</h2>
+      <p class="taref">إدارة البيانات هي عملية جمع البيانات وحفظها واستخدامها بأمان وكفاءة وفعالية من حيث التكلفة.</p>
+
+      <div class="roadmap-step">
+          <h3>مستوى مبتدئ:</h3>
+          <p><strong>- تعلم لغات البرمجة الأساسية مثل Python و SQL.</strong></p>
+          <p><strong>- فهم قواعد البيانات العلائقية و NoSQL.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://courseat.com">Courseat - دورات لإدارة البيانات</a>
+              <a href="https://courses.laimoon.com/ar/egypt/itanagementm">Laimoon - دورات إدارة البيانات</a>
+          </div>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متوسط:</h3>
+          <p><strong>- التعرف على أدوات إدارة البيانات وأفضل الممارسات.</strong></p>
+          <p><strong>- تطبيق استراتيجيات فعالة لإدارة البيانات.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://www.questionpro.com/blog/ar/%D8%A3%D8%AF%D9%88%D8%A7%D8%A1-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA">QuestionPro - أدوات إدارة البيانات</a>
+          </div>
+      </div>
+
+      <div class="roadmap-step">
+          <h3>مستوى متقدم:</h3>
+          <p><strong>- تطوير استراتيجيات تحسين إدارة البيانات للإنتاجية.</strong></p>
+          <p><strong>روابط دورات:</strong></p>
+          <div class="link-section">
+              <a href="https://www.oracle.com/eg/database/what-is-data-management/">Oracle - إدارة البيانات</a>
+              <a href="https://fihm.ai/tutorials/data_management_series_data_governance/">FIHM - إدارة البيانات</a>
+          </div>
+      </div>
+    </div>
+  </section>    
+  
+  <section class="bg" style="background-image: url(pexels-pixabay-265087.jpg);"></section>
+
+  <!-- قسم المصادر -->
+  <section class="sources">
+    <div class="container">
+      <h2 class="title">المصادر والمراجع</h2>
+      <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي يمكنك استخدامها للحصول على المزيد من المعلومات:</p>
+      <ul class="sources-li" style="text-align: center;">
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy - دورات تعليمية متنوعة</a></li>
+        <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متقدمة من جامعات مرموقة</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - برنامج تعلم تفاعلي</a></li>
+        <li><a href="https://www.datacamp.com/" target="_blank">DataCamp - تعلم البيانات وتعلم الآلة</a></li>
+        <li><a href="https://www.kaggle.com/" target="_blank">Kaggle - منصات تعلم البيانات وتحدياتها</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : Learning Roadmap 2024</p>
+  </footer>
+</body>
+
+</html>

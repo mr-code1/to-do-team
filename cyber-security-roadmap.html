@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - الأمن السيبراني</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #d1fdd5; /* تغيير لون الخلفية إلى فاتح */
+      color: #333; /* تغيير لون النص إلى لون أغمق للتباين */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('pexels-tima-miroshnichenko-5380792.jpg') no-repeat center center/cover fixed;
+      color: #fdf3d1;
+      text-shadow: 4px 4px 4px black;
+      height: 50vh;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+    .taref{
+      font-size: 20px;
+      
+    }
+    .learning-roadmap {
+      background: #ddfdd1; /* لون خلفية فاتح لقسم الخريطة */
+      padding: 40px 20px;
+      border-radius: 8px; /* إضافة زوايا مدورة */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    }
+   .learning-roadmap a{
+    color: #17aa37;
+   }
+
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333; /* لون النص في خريطة التعلم */
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 100px auto;
+      padding: 100px auto;
+    }
+
+    .roadmap-step {
+      background: rgba(67, 236, 0, 0.13); /* لون خلفية خفيف لكل خطوة */
+      border: 1px solid rgba(0, 0, 0, 0.1); /* حدود خفيفة حول كل خطوة */
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .roadmap-step h3 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+
+    .sources {
+      background: #f9f9f9; /* خلفية فاتحة */
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      margin-bottom: 0;
+    }
+
+    .sources h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sources ul {
+      list-style-type: none; /* بدون نقاط */
+      padding-left: 0; /* إزالة الهوامش */
+    }
+
+    .sources li {
+      margin: 10px 0; /* هوامش للقائمة */
+      width: 40%;
+    }
+
+    .sources a {
+      color: #17aa37; /* لون الروابط */
+      text-decoration: none; /* إزالة التنسيق الافتراضي */
+    }
+
+    .sources a:hover {
+      text-decoration: underline; /* إضافة التسطير عند التمرير */
+    }
+
+    .sources-li {
+      line-height: 2;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- الشريط العلوي -->
+  <div style="background-image: url(pexels-tima-miroshnichenko-5380792.jpg); height: 50vh; position: relative; width: 100%; display: inline-block;">
+    <header id="home" style="height: 90px; display: inline-block; background-image: url(pexels-tima-miroshnichenko-5380792.jpg);">
+      <div class="overlay">
+        <div class="content" style="padding-top: 20px;">
+          <nav>
+            <h3 class="logo">cyber security</h3>
+            <ul class="navbar">
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+              <li class="li-nav"><a href="blog.html">المدونة</a></li>
+              <li class="li-nav dropdown" >
+                <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                <ul class="dropdown-menu"> 
+                   <li><a href="data-science-roadmap.html">علم البيانات</a></li>
+                   <li><a href="game-dev-roadmap.html">تطوير الالعاب</a></li>
+                   <li><a href="web-dev.html">تطوير مواقع الويب</a></li>
+                   <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                   <li><a href="ai-roadmap.html">الذكاء الاصطناعي</a></li>
+                </ul>
+            </ul>
+          </nav>
+          <div class="hero">
+          <h1>خريطة تعلم الأمن السيبراني</h1>
+          <p>خطوات محددة لتعلم تقنيات الأمن السيبراني بسهولة</p>
+        </div>
+        </div>
+      </div>
+    </header>
+        
+  </div>
+
+  <!-- قسم الخريطة -->
+  <section class="learning-roadmap">
+    <div class="container">
+
+      <!-- المعرفة الشبكية وإدارة النظم -->
+      <h2>1. المعرفة الشبكية وإدارة النظم</h2>
+      <p class="taref">فهم أسس الشبكات وإدارة الأنظمة لتعزيز الأمان والحماية.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- تعلم الأساسيات:</strong><br>تعلم لغة جاهزة مناسبة مثل Java أو Python وفهم أساسيات الشبكات.</p>
+        <p><strong>- تثبيت بيئات التطوير:</strong><br>وجود أدوات مثل Wireshark أو Packet Tracer.</p>
+        <p><strong>- مصادر تعليمية:</strong><br><a href="https://www.udemy.com/">Udemy</a>، <a href="https://www.coursera.org/">Coursera</a>، <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/Computer-Networks-Andrew-Tanenbaum/dp/0133508481">Computer Networks - Andrew S. Tanenbaum</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- فهم نظم التشغيل:</strong><br>التعمق في نظم تشغيل Windows وLinux.</p>
+        <p><strong>- فهم الشبكات:</strong><br>استخدام أدوات مثل Wireshark لتحليل البيانات.</p>
+        <p><strong>- منصات مفتوحة:</strong><br><a href="https://www.networkacademy.com/">Network Academy</a>.</p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- بناء مشاريع عملية:</strong><br>إنشاء شبكة آمنة باستخدام أدوات إدارة الشبكات.</p>
+        <p><strong>- مصادر تعليمية:</strong><br>دورات متقدمة على <a href="https://www.pluralsight.com/">Pluralsight</a>.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/Network-Security-Assessment-Yourself-Management/dp/1491924919">Network Security Assessment - Chris McNab</a></p>
+      </div>
+
+      <!-- أنظمة التشغيل -->
+      <h2>2. أنظمة التشغيل والآلات الافتراضية</h2>
+      <p class="taref">دراسة نظم التشغيل وكيفية استخدام الآلات الافتراضية لتشغيل التطبيقات بأمان.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- تعلم المفاهيم الأساسية:</strong><br>استخدام أنظمة Windows وLinux وفهم بيئة النظام.</p>
+        <p><strong>- مواد التعلم:</strong><br>دورات على <a href="https://www.codecademy.com/">Codecademy</a>.</p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- فهم الآلات الافتراضية:</strong><br>التجربة باستخدام VirtualBox أو VMware.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/Virtualization-Technology-Guide-How-Virtualization/dp/9381319024">Virtualization Essentials</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- بناء بيئات اختبار:</strong><br>إنشاء بيئات افتراضية لأغراض الاختبار والتطوير.</p>
+        <p><strong>- منصات:</strong><br><a href="https://www.pluralsight.com/">Pluralsight</a>، <a href="https://www.lynda.com/">Lynda</a>.</p>
+      </div>
+
+      <!-- لغات الترميز -->
+      <h2>3. لغات الترميز</h2>
+      <p class="taref">تعلم لغات البرمجة لتطوير أدوات وتطبيقات تعزز الأمان السيبراني.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- تعلم البرمجة:</strong><br>بايثون وكوتلين لبناء التطبيقات الأمنية.</p>
+        <p><strong>- دورات:</strong><br><a href="https://www.udemy.com/course/learn-python-the-complete-python-developer-course/">Python Developer Course</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- تطوير أدوات الأمن:</strong><br>إنشاء سكربتات لأدوات الاختراق أو تحليل البيانات.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/Black-Hat-Python-Python-Exploits/dp/1593279247">Black Hat Python</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- مشاريع عملية:</strong><br>تطوير أدوات وبرامج متقدمة للأمن السيبراني والاختراق الأخلاقي.</p>
+        <p><strong>- منصات:</strong><br><a href="https://tryhackme.com/">TryHackMe</a>.</p>
+      </div>
+
+      <!-- مهارات الأمن السحابية -->
+      <h2>4. مهارات أمن السحابة</h2>
+      <p class="taref">حماية البيانات والنظم السحابية من التهديدات عبر تطبيق السياسات الأمنية المناسبة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- فهم أساسيات الحوسبة السحابية:</strong><br>استخدام AWS أو Azure.</p>
+        <p><strong>- مواد التعلم:</strong><br>دورات على <a href="https://cloudacademy.com/">Cloud Academy</a>.</p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- فهم سياسات الأمان:</strong><br>تأمين الأنظمة السحابية باستخدام أفضل الممارسات.</p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- تنفيذ حلول الأمان السحابية:</strong><br>بناء تطبيقات سحابية آمنة وحماية البيانات.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/AWS-Certified-Solutions-Architect-Official/dp/111947120X">AWS Certified Solutions Architect Official Study Guide</a></p>
+      </div>
+
+      <!-- معرفة الأمن المعلوماتي -->
+      <h2>5. معرفة أمن المعلومات</h2>
+      <p class="taref">تأمين المعلومات والبيانات ضد التهديدات المختلفة عن طريق استراتيجيات وتقنيات فعالة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>- تعلم الأساسيات:</strong><br>فهم مفهوم أمن المعلومات وتهديداته.</p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>- تطبيق حلول الأمان:</strong><br>استخدام أدوات متعددة لمراقبة وتحليل التهديدات.</p>
+        <p><strong>- كتب:</strong><br><a href="https://www.amazon.com/CISSP-All-In-One-Exam-Guide/dp/0071781748">CISSP All-in-One Exam Guide</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>- تطوير استراتيجيات الأمان:</strong><br>إعداد خطط طوارئ وتطوير استراتيجيات لإدارة الحوادث.</p>
+        <p><strong>- دورات متقدمة:</strong><br><a href="https://www.cybrary.it/course/cissp/">CISSP Training - Cybrary</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg" style="background-image: url(virtual-criminal-with-credit-card-keyboard.jpg);"></section>
+  
+  <!-- قسم المصادر -->
+  <section class="sources">
+    <div class="container">
+      <h2 class="title">المصادر والمراجع</h2>
+      <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي يمكنك استخدامها للحصول على المزيد من المعلومات:</p>
+      <ul class="sources-li" style="text-align: center;">
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy - دورات تعليمية متنوعة</a></li>
+        <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متقدمة من جامعات مرموقة</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - برنامج تعلم تفاعلي</a></li>
+        <li><a href="https://www.pluralsight.com/" target="_blank">Pluralsight - محتوى تعليمي متقدم</a></li>
+        <li><a href="https://www.cybrary.it/" target="_blank">Cybrary - دورات متخصصة في الأمن السيبراني</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : Cybersecurity Guide 2024</p>
+  </footer>
+</body>
+
+</html>

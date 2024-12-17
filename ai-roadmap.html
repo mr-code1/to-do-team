@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - الذكاء الاصطناعي</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #d1fdd1;
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('matrix-hacker-background.jpg') no-repeat center center/cover fixed;
+      color: #e8f8ea;
+      height: 50vh;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+     
+    .learning-roadmap {
+      background: #d9f7ce; /* لون الخلفية للقسم */
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 200px;
+    }
+
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333;
+    }
+    .learning-roadmap a{
+      color: #084610;
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 100px auto; 
+      padding: 100px auto;
+    }
+    .taref{
+      font-size: 20px;
+    }
+
+    .roadmap-step {
+      background: rgba(20, 236, 0, 0.144);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .roadmap-step h3 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+
+    .sources {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      margin-bottom: 0;
+    }
+
+    .sources h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sources ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .sources li {
+      margin: 10px 0;
+      width: 40%;
+    }
+
+    .sources a {
+      color: rgb(13, 122, 22);
+      text-decoration: none;
+    }
+
+    .sources a:hover {
+      text-decoration: underline;
+    }
+    .line::after{
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 50%;
+     margin-left: 25%;
+     background-color:rgb(13, 122, 22) ;
+    }
+    .sources-li {
+      line-height: 2;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+    footer{
+    text-align: center;
+    background-color: rgba(14, 14, 62, 0.397);
+    color: white;;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+  </style>
+</head>
+<body>
+  <!-- الشريط العلوي -->
+    <header id="home" style="height: 70px; background-image: url(matrix-hacker-background.jpg);">
+      <div class="overlay">
+        <div class="content" style="padding-top: 20px;">
+          <nav>
+            <h3 class="logo">ai</h3>
+            <ul class="navbar">
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+              <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+              <li class="li-nav"><a href="C:\Users\pc\Desktop\project\HTML\blog.html">المدونة</a></li>
+              <li class="li-nav dropdown" >
+                <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                <ul class="dropdown-menu"> 
+                   <li><a href="cyber-security-roadmap.html">الامن السيبراني</a></li>
+                   <li><a href="data-science-roadmap.html">علم البيانات</a></li>
+                   <li><a href="game-dev-roadmap.html">تطوير الالعاب</a></li>
+                   <li><a href="web-dev.html">تطوير مواقع الويب</a></li>
+                   <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                </ul>
+            </ul>
+          </nav>
+              <div class="hero">
+                <h1>خريطة تعلم الذكاء الاصطناعي</h1>
+                <p>خطوات واضحة لتعلم تقنيات الذكاء الاصطناعي.</p>
+              </div>
+      </div>
+   </div>
+</header>
+</div>
+  <!-- قسم الخريطة -->
+  <section class="learning-roadmap">
+    <div class="container">
+      <!-- القسم الأول -->
+      <h2>1. التعلم الآلي (Machine Learning)</h2>
+      <p class="taref">التعلم الآلي هو فرع من الذكاء الاصطناعي يركز على تطوير الخوارزميات والنماذج التي تمكّن الحواسيب من التعلم من البيانات وتحسين أدائها دون برمجة صريحة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>مقدمة في التعلم الآلي:</strong> تعلم الأسس والمفاهيم الأساسية.<br>موارد: <a href="https://www.w3schools.com/ml/">W3Schools - Machine Learning</a></p>
+        <p><strong>Python:</strong> تعلم أساسيات البرمجة بلغة بايثون.<br>موارد: <a href="https://www.learnpython.org/">Learn Python</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/machine-learning">Machine Learning by Andrew Ng (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>تحليل البيانات:</strong> تعلم مكتبات مثل NumPy وPandas.<br>موارد: <a href="https://pandas.pydata.org/">Pandas Documentation</a></p>
+        <p><strong>نماذج التعلم الآلي:</strong> تعلم كيفية بناء نماذج بسيطة.<br>موارد: <a href="https://scikit-learn.org/stable/index.html">scikit-learn</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/applied-data-science-capstone">Applied Data Science with Python (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>التعلم العميق:</strong> تعلم استخدام مكتبات مثل TensorFlow وKeras.<br>موارد: <a href="https://www.tensorflow.org/">TensorFlow Documentation</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization (Coursera)</a></p>
+      </div>
+
+      <!-- القسم الثاني -->
+      <h2>2. معالجة اللغة الطبيعية (Natural Language Processing)</h2>
+      <p class="taref">معالجة اللغة الطبيعية هي فرع من الذكاء الاصطناعي يهدف إلى تمكين الحواسيب من فهم وتحليل النصوص والكلام البشري، مما يتيح التفاعل الآلي مع اللغات الطبيعية بشكل فعال.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>مقدمة في معالجة اللغة:</strong> فهم الأساسيات.<br>موارد: <a href="https://www.nltk.org/">Natural Language Toolkit (NLTK)</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/language-processing">Natural Language Processing (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>تحليل النصوص:</strong> تعلم كيفية تحليل النصوص واستخرج المعلومات.<br>موارد: <a href="https://spacy.io/">spaCy Documentation</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/specializations/natural-language-processing">Natural Language Processing Specialization (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>نماذج اللغة:</strong> تعلم كيفية بناء نماذج مثل BERT وGPT.<br>موارد: <a href="https://huggingface.co/transformers/">Hugging Face Transformers</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/transformers">Natural Language Processing with Transformers (Coursera)</a></p>
+      </div>
+
+      <!-- القسم الثالث -->
+      <h2>3. الرؤية الحاسوبية (Computer Vision)</h2>
+      <p class="taref">التعلم الآلي هو فرع من الذكاء الاصطناعي يركز على تطوير الخوارزميات والنماذج التي تمكّن الحواسيب من التعلم من البيانات وتحسين أدائها دون برمجة صريحة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>مقدمة في الرؤية الحاسوبية:</strong> تعلم الأساسيات.<br>موارد: <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/">OpenCV Documentation</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/computer-vision-basics">Basics of Computer Vision (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>دعم الشبكات العصبية:</strong> تعلم استخدام CNNs.<br>موارد: <a href="https://www.pyimagesearch.com/">PyImageSearch</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/convolutional-neural-networks">Convolutional Neural Networks (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>مشاريع متقدمة:</strong> بناء مشاريع معقدة مثل التعرف على الوجه.<br>موارد: <a href="https://towardsdatascience.com/">Towards Data Science</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/specializations/advanced-computer-vision">Advanced Computer Vision (Coursera)</a></p>
+      </div>
+
+      <!-- القسم الرابع -->
+      <h2>4. الروبوتات (Robotics)</h2>
+      <p class="taref">الروبوتات هي أنظمة ميكانيكية أو إلكترونية مصممة لأداء مهام محددة تلقائياً. تجمع بين الهندسة والذكاء الاصطناعي، وتستخدم في مجالات متعددة مثل الصناعة، الطب، والزراعة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>فهم الروبوتات:</strong> مقدمة في أنواع الروبوتات.<br>موارد: <a href="https://roboticscourse.org/">Robotics Course</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/robotics-introduction">Introduction to Robotics (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>البرمجة والتحكم:</strong> تعلم كيفية برمجة الروبوتات.<br>موارد: <a href="https://www.ros.org/">Robot Operating System (ROS)</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/robotics-perception">Robotics: Perception (Coursera)</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>تحسين الأداء:</strong> العمل مع الروبوتات المستقلة.<br>موارد: <a href="https://www.ros.org/" target="_blank">ROS Documentation</a></p>
+        <p><strong>الكورسات:</strong> <a href="https://www.coursera.org/learn/robotics-motion-planning">Robotics: Motion Planning (Coursera)</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg" style="background-image: url(abstract-illustration-cat-walking.jpg)"></section>
+
+  <!-- قسم المصادر -->
+  <section class="sources">
+    <div class="container">
+      <h2 class="title">المصادر والمراجع</h2>
+      <div class="line"></div>
+      <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي يمكنك الاطلاع عليها للحصول على المزيد من المعلومات حول الذكاء الاصطناعي:</p>
+      <ul class="sources-li">
+        <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متقدمة في الذكاء الاصطناعي</a></li>
+        <li><a href="https://www.edx.org/" target="_blank">edX - مساقات تعليمية من الجامعات الكبرى</a></li>
+        <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow - مكتبة التعلم العميق</a></li>
+        <li><a href="https://www.pytorch.org/" target="_blank">PyTorch - مكتبة التعلم العميق</a></li>
+        <li><a href="https://www.kaggle.com/" target="_blank">Kaggle - مجتمع ومسابقات علم البيانات</a></li>
+        <li><a href="https://towardsdatascience.com/" target="_blank">Towards Data Science - مقالات حول علم البيانات</a></li>
+        <li><a href="https://www.datasciencecentral.com/" target="_blank">Data Science Central - موارد حول علم البيانات</a></li>
+        <li><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI - موارد ودورات في التعلم العميق</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : Mr Code 2024</p>
+  </footer>
+</body>
+</html>

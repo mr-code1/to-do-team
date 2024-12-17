@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - تطوير التطبيقات</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #fdf3d1; /* تغيير لون الخلفية إلى فاتح */
+      color: #333; /* تغيير لون النص إلى لون أغمق للتباين */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('pexels-airamdphoto-16450744.jpg') no-repeat center center/cover fixed;
+      color: #fdf3d1;
+      height: 50vh;
+      text-shadow: 5px 5px 5px black;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+
+    .learning-roadmap {
+      background: #fdf3d1; /* لون خلفية فاتح لقسم الخريطة */
+      padding: 40px 20px;
+      border-radius: 8px; /* إضافة زوايا مدورة */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    }
+
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333; /* لون النص في خريطة التعلم */
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 100px auto; 
+      padding: 100px auto;
+    }
+
+    .container a {
+      color: #362a00; /* لون الروابط */
+    }
+
+    .roadmap-step {
+      background: rgba(236, 216, 0, 0.13); /* لون خلفية خفيف لكل خطوة */
+      border: 1px solid rgba(0, 0, 0, 0.1); /* حدود خفيفة حول كل خطوة */
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .roadmap-step h3 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+
+    .sources {
+      background: #f9f9f9; /* خلفية فاتحة */
+      padding: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      margin: 40px 0;
+      margin-bottom: 0;
+    }
+
+    .sources h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sources ul {
+      list-style-type: none; /* بدون نقاط */
+      padding-left: 0; /* إزالة الهوامش */
+    }
+
+    .sources li {
+      margin: 10px 0; /* هوامش للقائمة */
+      width: 40%;
+    }
+
+    .sources a {
+      color: #3498db; /* لون الروابط */
+      text-decoration: none; /* إزالة التنسيق الافتراضي */
+    }
+
+    .sources a:hover {
+      text-decoration: underline; /* إضافة التسطير عند التمرير */
+    }
+
+    .sources-li {
+      line-height: 2;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+    footer{
+    text-align: center;
+    background-color: rgba(14, 14, 62, 0.397);
+    color: white;;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <div style="background-image: url(pexels-airamdphoto-16450744.jpg); height: 50vh; position: relative; width: 100%; display: inline-block;">
+      <header id="home" style="height: 70px; display: inline-block; background-image: url(pexels-airamdphoto-16450744.jpg);">
+          <div class="overlay">
+          <div class="content" style="padding-top: 20px;">
+            <nav>
+              <h3 class="logo">APP DEVELOPMENT</h3>
+              <ul class="navbar">
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+                <li class="li-nav"><a href="C:\Users\pc\Desktop\project\HTML\blog.html">المدونة</a></li>
+                <li class="li-nav dropdown" >
+                  <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                  <ul class="dropdown-menu"> 
+                     <li><a href="cyber-security-roadmap.html">الامن السيبراني</a></li>
+                     <li><a href="data-science-roadmap.html">علم البيانات</a></li>
+                     <li><a href="web-dev.html">تطوير مواقع الويب</a></li>
+                     <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                     <li><a href="ai-roadmap.html">الذكاء الاصطناعي</a></li>
+                  </ul>
+              </ul>
+            </nav>
+            <div class="hero">
+         <h1>خريطة تعلم تطوير التطبيقات</h1>
+         <p>خطوات محددة لتعلم تقنيات تطوير التطبيقات بسهولة</p>
+        </div>
+          </div>
+       </header>
+      </div> 
+  </div>
+
+  <!-- قسم الخريطة -->
+  <section class="learning-roadmap">
+    <div class="container">
+      <!-- قسم المبتدئ -->
+      <h2>1. المستوى المبتدئ (Foundational Level)</h2>
+      <div class="roadmap-step">
+        <h3>الهدف: بناء أساس قوي في تطوير التطبيقات</h3>
+        <p><strong>- 1 تعلم الأساسيات:</strong><br>تعلم لغة برمجة مناسبة (Kotlin أو Java للأندرويد، Swift لـ iOS).<br>تعلم المبادئ الأساسية في البرمجة مثل المتغيرات والشروط والحلقات والدوال.</p>
+        <p><strong>- 2 تثبيت بيئات التطوير:</strong><br>Android Studio للأندرويد، Xcode لـ iOS.</p>
+        <p><strong>- 3 مشاريع صغيرة:</strong><br>إنشاء تطبيق بسيط مثل آلة حاسبة أو قائمة مهام.</p>
+        <p><strong>- 4 مصادر تعليمية:</strong><br><a href="https://www.udemy.com/">Udemy</a>،<a href="https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_coursera-plus_coursera_ftcof_subscription_oct-24_dr_geo-multi-set4_sem_rsa_gads_lg-en&campaignid=21836581623&adgroupid=351685085710&device=c&keyword=coursera&matchtype=e&network=g&devicemodel=&adposition=&creativeid=1449957450675&hide_mobile_promo&gad_source=1&gclid=CjwKCAiAmfq6BhAsEiwAX1jsZ51JBN86t5J_mYUlufapoGQ4lng9LLYsfLsiOyKgDeGbNT9wnZoncxoCcNwQAvD_BwE"> Coursera</a>، <a href="https://www.freecodecamp.org/">FreeCodeCamp</a> ، قنوات يوتيوب.</p>
+      </div>
+
+      <!-- قسم المستوى الثاني -->
+      <h2>2. المستوى المتوسط (Intermediate Level)</h2>
+      <div class="roadmap-step">
+        <h3>الهدف: تطوير مهارات لبناء تطبيقات أكثر تفاعلاً</h3>
+        <p><strong>- 1 تعلم مفاهيم متقدمة:</strong><br>التعامل مع قواعد البيانات (SQLite، Firebase، CoreData) وإنشاء واجهات مستخدم تفاعلية.</p>
+        <p><strong>- 2 فهم تقنيات الربط مع الانترنت:</strong><br>التعامل مع REST APIs وJSON لارسال واستقبال البيانات.</p>
+        <p><strong>- 3 تطبيق مكونات الهاتف:</strong><br>الاشعارات، تحديد الموقع GPS، استخدام الكاميرا.</p>
+        <p><strong>- 4 مشاريع عملية:</strong><br>إنشاء تطبيق يعرض الأخبار من مصدر خارجي وتطبيق خرائط لتحديد الموقع.</p>
+        <p><strong>- 5 مصادر تعليمية:</strong><br>منصات مثل <a href="https://www.pluralsight.com/?clickid=CjwKCAiAmfq6BhAsEiwAX1jsZ7dZgmT4q25IEVq_o5keeld5oVj28Yt_2oo3ozhMihU4OSr9CqQ9dhoC5jAQAvD_BwE&utm_source=google&utm_medium=paid-search&utm_campaign=upskilling-and-reskilling&utm_term=brs-emea-xyz-e&utm_content=free-trial&gad_source=1&gclid=CjwKCAiAmfq6BhAsEiwAX1jsZ7dZgmT4q25IEVq_o5keeld5oVj28Yt_2oo3ozhMihU4OSr9CqQ9dhoC5jAQAvD_BwE">Pluralsight</a> <a href="https://www.rwaq.org/">رواق</a> أو .</p>
+      </div>
+
+      <!-- قسم المستوى الثالث -->
+      <h2>3. المستوى المتقدم (Advanced Level)</h2>
+      <div class="roadmap-step">
+        <h3>الهدف: احتراف تقنيات متقدمة ونشر التطبيقات</h3>
+        <p><strong>- 1 الاحتراف في هندسة البرمجيات:</strong><br>استخدام أنماط التصميم مثل MVVM أو MVC وتحسين الأداء.</p>
+        <p><strong>- 2 العمل على مشاريع متقدمة:</strong><br>إنشاء تطبيق شامل يعتمد على الوقت الحقيقي مثل تطبيق محادثات.</p>
+        <p><strong>- 3 النشر والتوزيع:</strong><br>رفع تطبيقات الى App Store أو Google Play وتعلم تقنيات تسويق التطبيقات.</p>
+        <p><strong>- 4 تعلم تقنيات جديدة:</strong><br>تطبيقات متعددة المنصات باستخدام Flutter أو React Native.</p>
+        <p><strong>- 5 مصادر تعليمية:</strong><br>وثائق رسمية من Apple Developers أو Android Developers، ومجتمعات مثل <a href="https://github.com/">GitHub</a> أو <a href="https://stackoverflow.com/">Stack Overflow</a>.</p>
+      </div>
+
+      <!-- المجالات المتفرعة -->
+      <h2>المجالات المتفرعة</h2>
+      <div class="roadmap-step">
+        <h3>تطوير تطبيقات أندرويد</h3>
+        <p>تطوير تطبيقات أندرويد هو مجال يُعنى بتصميم وإنشاء تطبيقات تعمل على نظام تشغيل الأندرويد، ويعتبر النظام الأكثر انتشارًا. يتم استخدام لغة Kotlin أو Java لتطوير هذه التطبيقات عبر بيئة تطوير خاصة تُسمى Android Studio.</p>
+        <p>هذه التطبيقات يمكن أن تشمل ألعابًا، أدوات إنتاجية، وغيرها، وتُتاح غالبًا من خلال متجر Google Play.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg" style="background-image: url(applications-be-connected.jpg);"></section>
+
+  <!-- قسم المصادر -->
+<section class="sources">
+  <div class="container">
+    <h2 class="title">المصادر والمراجع</h2>
+    <div class="line"></div>
+    <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي يمكنك استخدامها للحصول على المزيد من المعلومات:</p>
+    <ul class="sources-li">
+      <li><a href="https://www.udemy.com/" target="_blank">Udemy - دورات تعليمية متنوعة</a></li>
+      <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متقدمة من جامعات مرموقة</a></li>
+      <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - برنامج تعلم تفاعلي</a></li>
+      <li><a href="https://www.pluralsight.com/" target="_blank">Pluralsight - محتوى تعليمي متقدم</a></li>
+      <li><a href="https://developer.android.com/docs" target="_blank">Android Developers - وثائق رسمية</a></li>
+      <li><a href="https://developer.apple.com/documentation/" target="_blank">Apple Developers - وثائق رسمية</a></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : Mr Code 2024</p>
+  </footer>
+</body>
+</html>

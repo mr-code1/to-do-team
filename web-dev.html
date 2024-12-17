@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - تطوير المواقع</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #fdf3d1; /* تغيير لون الخلفية إلى فاتح */
+      color: #333; /* تغيير لون النص إلى لون أغمق للتباين */
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('pexels-pixabay-270408.jpg') no-repeat center center/cover fixed;
+      color: #fdf3d1;
+      height: 50vh;
+      text-shadow: 5px 5px 5px black;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+
+    .learning-roadmap {
+      background: #fdf3d1; /* لون خلفية فاتح لقسم الخريطة */
+      padding: 40px 20px;
+      border-radius: 8px; /* إضافة زوايا مدورة */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    }
+
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333; /* لون النص في خريطة التعلم */
+    }
+
+    .container {
+      max-width: 80%;
+      margin:100px auto; 
+      padding: 100px auto;
+    }
+
+    .container a {
+      color: #362a00; /* لون الروابط */
+    }
+
+    .roadmap-step {
+      background: rgba(236, 216, 0, 0.13); /* لون خلفية خفيف لكل خطوة */
+      border: 1px solid rgba(0, 0, 0, 0.1); /* حدود خفيفة حول كل خطوة */
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .roadmap-step h3{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+.sources {
+  background: #f9f9f9; /* خلفية فاتحة */
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  margin-bottom: 0;
+}
+
+.sources h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sources ul {
+  list-style-type: none; /* بدون نقاط */
+  padding-left: 0; /* إزالة الهوامش */
+}
+
+.sources li {
+  margin: 10px 0; /* هوامش للقائمة */
+  width: 40%;
+}
+
+.sources a {
+  color: #3498db; /* لون الروابط */
+  text-decoration: none; /* إزالة التنسيق الافتراضي */
+}
+
+.sources a:hover {
+  text-decoration: underline; /* إضافة التسطير عند التمرير */
+}
+.sources-li{
+  line-height: 2;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+footer{
+    text-align: center;
+    background-color: rgba(14, 14, 62, 0.397);
+    color: white;;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+</style>
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <div style="background-image: url(pexels-pixabay-270408.jpg); height: 50vh; position: relative; width: 100%; display: inline-block;">
+      <header id="home" style="height: 70px; display: inline-block; background-image: url(pexels-pixabay-270408.jpg);">
+          <div class="overlay">
+          <div class="content" style="padding-top: 20px;">
+            <nav>
+              <h3 class="logo">WEB DEVELOPMENT</h3>
+              <ul class="navbar">
+                <li class="li-nav dropdown"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\blog.html">المدونة</a></li>
+                <li class="li-nav dropdown" >
+                  <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                  <ul class="dropdown-menu"> 
+                     <li><a href="cyber-security-roadmap.html">الامن السيبراني</a></li>
+                     <li><a href="data-science-roadmap.html">علم البيانات</a></li>
+                     <li><a href="game-dev-roadmap.html">تطوير الالعاب</a></li>
+                     <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                     <li><a href="ai-roadmap.html">الذكاء الاصطناعي</a></li>
+                  </ul>
+              </ul>
+            </nav>
+            <div class="hero">
+         <h1>خريطة تعلم تطوير المواقع</h1>
+         <p>خطوات محددة لتعلم تقنيات تطوير المواقع بسهولة</p>
+         </div>
+          </div>
+        </header>
+      </div> 
+  </div>
+
+  <!-- قسم الخريطة -->
+  <section class="learning-roadmap">
+    <div class="container">
+      <!-- القسم الأول -->
+      <h2>1. تطوير الويب الأمامي (Frontend Development)</h2>
+      <p class="taref">الفرونت إند هو جزء من تطوير الويب يهتم بالشكل والتفاعل الذي يراه المستخدم. يشمل تصميم واجهات المستخدم باستخدام لغات مثل HTML وCSS وJavaScript لتوفير تجربة مستخدم سلسة.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>HTML:</strong> تعلم الأسس والهيكلية الأساسية للمواقع.<br>موارد: <a href="https://www.w3schools.com/html/">W3Schools - HTML</a></p>
+        <p><strong>CSS:</strong> تعلم التصميم والتنسيق.<br>موارد: <a href="https://www.w3schools.com/css/">W3Schools - CSS</a></p>
+        <p><strong>JavaScript:</strong> تعلم الأساسيات واستخدام المتغيرات والدوال.<br>موارد: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">FreeCodeCamp - JavaScript</a></p>
+        <p><strong>كورسات للتعلم :</strong> <a href="https://www.udemy.com/course/build-your-first-web-page-using-html-and-css/"> HTML / CSS</a> || <a href="https://www.udemy.com/course/the-complete-javascript-course/">JavaScript </a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>إطارات العمل (Frameworks):</strong> React أو Vue.js.<br>موارد: <a href="https://legacy.reactjs.org/docs/getting-started.html">React Official Documentation</a></p>
+        <p><strong>CSS المتقدم:</strong> تعلم SASS و Flexbox و Grid.<br>موارد: <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">CSS-Tricks</a></p>
+        <p><strong>JavaScript المتقدم:</strong> الوعود (Promises) والبرمجة الكائنية.<br>موارد: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN - JavaScript</a></p>
+        <p><strong>كورسات للتعلم :</strong> <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"> React </a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>تحسين الأداء:</strong> استخدام أدوات مثل Lighthouse.<br>موارد: <a href="https://pagespeed.web.dev/">Web.dev - Performance</a></p>
+        <p><strong>تجربة المستخدم:</strong> تصميم واجهات متفاعلة.<br>موارد: <a href="https://www.nngroup.com/">Nielsen Norman Group</a></p>
+        <p><strong>تفاعل API:</strong> دمج واجهات برمجة التطبيقات.<br>موارد: <a href="https://www.postman.com/">Postman</a></p>
+      </div>
+
+      <!-- القسم الثاني -->
+      <h2>2. تطوير الويب الخلفي (Backend Development)</h2>
+      <p class="taref">الباك إند هو الجزء من تطوير الويب المسؤول عن الخوادم وقواعد البيانات. يتعامل مع المنطق الخلفي وتخزين البيانات، ويعمل مع لغات مثل Python، Ruby، وNode.js لتلبية طلبات المستخدمين. </p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>أساسيات البرمجة:</strong> Python أو PHP.<br>موارد: <a href="https://www.learnpython.org/">Learn Python</a></p>
+        <p><strong>قواعد البيانات:</strong> SQL مع MySQL.<br>موارد: <a href="https://www.w3schools.com/sql/">W3Schools - SQL</a></p>
+        <p><strong>كورسات : </strong><a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/">Python</a> || <a href="https://www.udemy.com/course/php-for-beginners-Become-a-PHP-Developer/">PHP</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>إطارات العمل:</strong> Node.js مع Express أو Django.<br>موارد: <a href="https://nodejs.dev/learn">Node.js Official Guide</a></p>
+        <p><strong>التكامل مع قواعد البيانات:</strong> MongoDB أو PostgreSQL.<br>موارد: <a href="https://university.mongodb.com/">MongoDB University</a></p>
+        <p><strong>كورسات : </strong><a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/">Nodejs</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>Web Services:</strong> تطوير RESTful APIs أو GraphQL.<br>موارد: <a href="https://learning.postman.com/docs/getting-started/introduction/">Postman Learning Center</a></p>
+        <p><strong>أمان التطبيقات:</strong> تأمين التطبيقات.<br>موارد: <a href="https://owasp.org/www-project-top-ten/">OWASP Guidelines</a></p>
+      </div>
+
+      <!-- القسم الثالث -->
+      <h2>3. تطوير التطبيقات الوبائية (Web Applications Development)</h2>
+      <p class="taref"> تطوير التطبيقات الوبائية هو عملية إنشاء تطبيقات تعمل عبر الإنترنت، مما يتيح للمستخدمين الوصول إليها من خلال متصفح. يشمل ذلك تصميم واجهات المستخدم (Front-end) والتعامل مع الخوادم وقواعد البيانات (Back-end) لتحقيق وظائف معقدة. يركز هذا التطوير على تجربة المستخدم، الأداء، والأمان.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>إدارة الحالة:</strong> Redux.<br>موارد: <a href="https://redux.js.org/introduction/getting-started">Redux Documentation</a></p>
+        <p><strong>كورسات : </strong><a href="https://www.udemy.com/course/react-redux/">Redux</a> </p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>إنشاء تطبيقات كاملة:</strong> بناء تطبيق متكامل.<br>موارد: <a href="https://fullstackopen.com/en/">Full-Stack Open</a></p>
+        <p><strong>كورسات :</strong> <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/">Full-Stack</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>التطبيقات المعقدة:</strong> مشاريع متعددة المستخدمين والبيانات.<br>موارد: <a href="https://aws.amazon.com/serverless/">Serverless Architecture</a></p>
+      </div>
+
+      <!-- القسم الرابع -->
+      <h2>4. تحسين محركات البحث (SEO)</h2>
+      <p class="taref"> تحسين محركات البحث هو عملية تحسين رؤية وترتيب موقع الويب في نتائج محركات البحث من خلال استخدام استراتيجيات مثل تحسين المحتوى، وبناء الروابط، والتحليل التقني.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>فهم الأساسيات:</strong> كيفية عمل محركات البحث.<br>موارد: <a href="https://developers.google.com/search">Google Search Central</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>تحسين المحتوى:</strong> الكلمات المفتاحية وتحسين النصوص.<br>موارد: <a href="https://yoast.com/wordpress/plugins/seo/">Yoast SEO</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>تحليل الأداء:</strong> أدوات مثل Google Analytics.<br>موارد: <a href="https://analytics.google.com/analytics/academy/">Google Analytics Academy</a></p>
+        <p><strong>كورسات :</strong><a href="https://skillshop.exceedlms.com/student/catalog/list?category_ids=4-google-analytics">Google Analytics</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg" style="background-image: url(pexels-divinetechygirl-1181263.jpg);"></section>
+
+  <!-- قسم المصادر -->
+<section class="sources">
+  <div class="container">
+    <h2 class="title">المصادر والمراجع</h2>
+    <div class="line"></div>
+    <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي قمنا بجمع المعلومات منها و يمكنك ايضا الاطلاع عليها للحصول على المزيد و المزيد من المعلومات الصحيحة :</p>
+    <ul class="sources-li">
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools - مصادر شاملة لتعلم HTML، CSS، JavaScript، وSQL</a></li>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs - وثائق مطوري الويب من موزيلا</a></li>
+      <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - برنامج تعلم تفاعلي لتطوير الويب</a></li>
+      <li><a href="https://www.udemy.com/" target="_blank">Udemy - مجموعة واسعة من الدورات التعليمية في تطوير الويب</a></li>
+      <li><a href="https://www.codecademy.com/" target="_blank">Codecademy - تعلم البرمجة وتطوير الويب بشكل تفاعلي</a></li>
+      <li><a href="https://www.coursera.org/" target="_blank">Coursera - دورات متقدمة من جامعات مرموقة</a></li>
+      <li><a href="https://www.edx.org/" target="_blank">edX - مساقات تعليمية من الجامعات الكبرى</a></li>
+      <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow - منصة للأسئلة والأجوبة للمطورين</a></li>
+      <li><a href="https://www.nngroup.com/" target="_blank">Nielsen Norman Group - موارد حول تجربة المستخدم</a></li>
+      <li><a href="https://owasp.org/" target="_blank">OWASP - مجموعة مفتوحة من المصادر لمساعدة مطوري الويب على تحسين أمان التطبيقات</a></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : mr code 2024</p>
+  </footer>
+</body>
+</html>

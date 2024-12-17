@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خريطة التعلم - تصميم الألعاب</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #d1edfd; /* تغيير لون الخلفية إلى فاتح */
+      color: #333; /* تغيير لون النص إلى لون أغمق للتباين */
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('couple-gamers-making-winner-gesture-while-playing-space-shooter-virtual-championship.jpg') no-repeat center center/cover fixed;
+      color: #fdf3d1;
+      height: 50vh;
+      text-shadow: 4px 4px 4px black;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-top: 100px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin: 20px auto;
+    }
+
+    .learning-roadmap {
+      background: #d1edfd; /* لون خلفية فاتح لقسم الخريطة */
+      padding: 40px 20px;
+      border-radius: 8px; /* إضافة زوايا مدورة */
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف لإضفاء العمق */
+    }
+    .taref{
+      font-size: 20px;
+    }
+    .learning-roadmap p {
+      line-height: 3;
+      color: #333; /* لون النص في خريطة التعلم */
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 100px auto; 
+    }
+
+    .roadmap-step {
+      background: rgba(0, 169, 236, 0.13); /* لون خلفية خفيف لكل خطوة */
+      border: 1px solid rgba(0, 0, 0, 0.1); /* حدود خفيفة حول كل خطوة */
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .roadmap-step a{
+      color: #00406b;
+    }
+    .roadmap-step h3 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .roadmap-step:hover {
+      transform: translateY(-5px);
+    }
+
+    .sources {
+  background: #f9f9f9; /* خلفية فاتحة */
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  margin-bottom: 0;
+}
+
+
+    .sources h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sources ul {
+  list-style-type: none; /* بدون نقاط */
+  padding-left: 0; /* إزالة الهوامش */
+}
+
+.sources li {
+  margin: 10px 0; /* هوامش للقائمة */
+  width: 40%;
+}
+
+    .sources a {
+      color: #3498db; /* لون الروابط */
+      text-decoration: none; /* إزالة التنسيق الافتراضي */
+    }
+
+    .sources a:hover {
+      text-decoration: underline; /* إضافة التسطير عند التمرير */
+    }
+
+    .sources-li {
+      line-height: 2;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+    .sources-li li{
+      width: 40%;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(14, 14, 62, 0.397);
+      color: white;
+      height: 40px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <div style="background-image: url(couple-gamers-making-winner-gesture-while-playing-space-shooter-virtual-championship.jpg); height: 50vh; position: relative; width: 100%; display: inline-block;">
+      <header id="home" style="height: 70px; display: inline-block; background-image: url(couple-gamers-making-winner-gesture-while-playing-space-shooter-virtual-championship.jpg);">
+          <div class="overlay">
+          <div class="content" style="padding-top: 20px;">
+            <nav>
+              <h3 class="logo">games Development</h3>
+              <ul class="navbar">
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\index.html">الرئيسية</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\services.html">الخدمات</a></li>
+                <li class="li-nav"><a href="C:\Users\Cc\Desktop\project\HTML\about us.html">معلومات عنا</a></li>
+                <li class="li-nav"><a href="blog.html">المدونة</a></li>
+                <li class="li-nav dropdown" >
+                  <a class="dropdown-a" href="our-courses.html"> خرائط التعلم</a>
+                  <ul class="dropdown-menu"> 
+                     <li><a href="cyber-security-roadmap.html">الامن السيبراني</a></li>
+                     <li><a href="data-science-roadmap.html">علم البيانات</a></li>
+                     <li><a href="web-dev.html">تطوير مواقع الويب</a></li>
+                     <li><a href="app-dev-roadmap.html">تطوير تطبيقات الهاتف</a></li>
+                     <li><a href="ai-roadmap.html">الذكاء الاصطناعي</a></li>
+                  </ul>
+              </ul>
+            </nav> 
+          <div class="hero">
+         <h1>خريطة تعلم تصميم الألعاب</h1>
+         <p>خطوات واضحة لتعلم فنون تصميم الألعاب.</p>
+        </div>
+          </div>
+       </header>
+       
+      </div> 
+  </div>
+
+  <!-- قسم الخريطة -->
+  <section class="learning-roadmap">
+    <div class="container">
+      <!-- القسم الأول -->
+      <h2> تصميم الألعاب الأساسية</h2>
+      <p class="taref">هو عملية إنشاء أفكار ومفاهيم الألعاب، بما في ذلك الميكانيكيات، القصة، الرسوميات، والصوت، بهدف تقديم تجربة تفاعلية ممتعة للاعبين.</p>
+      <div class="roadmap-step">
+        <h3>مستوى مبتدئ:</h3>
+        <p><strong>تعريف أساسيات تصميم الألعاب:</strong> فهم أنواع الألعاب، عمليات الألعاب، وعناصر تصميم اللعبة الأساسية.<br>موارد: <a href="https://www.edraak.org/programs/course/gamedeign/">دورة تصميم الألعاب على إدراك</a></p>
+        <p><strong>كتب:</strong> <a href="https://www.amazon.com/Game-Design-Workshop-Getting-Started/dp/1498793348">Game Design Workshop</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متوسط:</h3>
+        <p><strong>تحسين مهارات التصميم:</strong> تعلم استخدام أدوات التصميم مثل Unity أو Unreal Engine.<br>موارد: <a href="https://www.udemy.com/course/unitycourse/">دورة تصميم الألعاب باستخدام Unity على Udemy</a></p>
+        <p><strong>كتب:</strong> <a href="https://www.amazon.com/Unreal-Engine-Game-Development-Complete/dp/1803140736">Unreal Engine Game Development</a></p>
+      </div>
+      <div class="roadmap-step">
+        <h3>مستوى متقدم:</h3>
+        <p><strong>تطوير الألعاب المتقدمة:</strong> دراسة برمجة الألعاب وتطوير التجارب التفاعلية.<br>موارد: <a href="https://www.for9a.com/courses/%D8%AF%D9%88%D8%B1%D8%A9-9%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9D">دورة متقدمة على منصة فرصة</a></p>
+        <p><strong>كتب:</strong> <a href="https://www.amazon.com/Introduction-Game-Design-Development-Computational/dp/110847906X">Introduction to Game Design</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg" style="background-image: url(game-play-entertainment-fun-relax-leisure-graphic.jpg);">
+
+  </section>
+
+  <!-- قسم المصادر -->
+  <section class="sources">
+    <div class="container">
+      <h2 class="title">المصادر والمراجع</h2>
+      <div class="line"></div>
+      <p style="text-align: center;">إليك بعض المصادر والمراجع الموثوقة التي يمكنك الاطلاع عليها للحصول على المزيد من المعلومات حول تصميم الألعاب:</p>
+      <ul class="sources-li" style="text-align: center;">
+        <li><a href="https://hbrarabic.com/%D8%A7%D9%84%D9%85%D9%81%D8%A7%D9%87%D9%8A%D9%85%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9/%D9%85%D8%B5%D9%85%D9%85%D8%A3%D9%84%D8%B9%D8%A7%D8%A8/" target="_blank">تعريف مصمم الألعاب</a></li>
+        <li><a href="https://www.edraak.org/programs/course/gamedeign/" target="_blank">دورة تصميم الألعاب على إدراك</a></li>
+        <li><a href="https://www.coursera.org/courses?query=game%20design" target="_blank">دورات تصميم الألعاب على كورسيرا</a></li>
+        <li><a href="https://www.for9a.com/courses/%D8%AF%D9%88%D8%B1%D8%A9-9%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9D" target="_blank">دورة متقدمة على منصة فرصة</a></li>
+        <li><a href="https://www.amazon.com/Game-Design-Workshop-Getting-Started/dp/1498793348" target="_blank">Game Design Workshop: A Playcentric Approach to Creating Innovative Games</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>@copy right : mr code 2024</p>
+  </footer>
+</body>
+</html>

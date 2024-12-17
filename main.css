@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style:oblique; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.title{
+    font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+}
+.main-style{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.line{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 30%;
+    height: 5px;
+    background-color: gray;
+    border-radius: 10%;
+    position: relative;
+}
+.line::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  background-color:rgb(43, 95, 239) ;
+}
+header{
+    display: inline-block;
+    background-image:url(html-css-collage-concept-with-person.jpg);
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.content{ 
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+button{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 40%;
+    color: white;
+    cursor: pointer;
+    border: solid 2px;
+    font-weight: 800;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+nav{
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;    
+    display: flex;
+}
+nav .navbar{
+    list-style: none;
+}
+nav .navbar .li-nav{
+    display:inline-flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+nav .navbar .li-nav a{
+    color: white;
+    text-decoration: none;
+    transition: ease 0.7s;
+}
+nav .navbar .li-nav a:hover{
+    color: burlywood;
+}
+.dropdown{ 
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    left:-50%;
+    top:70%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s , visability 0.5s;
+}
+.dropdown-menu li{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.415);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.dropdown-menu li:hover{
+    background-color: transparent;
+}
+
+.dropdown li{
+    list-style: none;
+
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 100%;
+    visibility: visible;
+}
+
+
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+.main{
+   color: white;
+   position: relative;
+   display: inline-block;
+   margin-top:170px;
+   margin-left:300px;
+   line-height: 1.5;
+}
+.main h1{
+    word-spacing: 4px;
+    font-style:initial;
+    font-size: 60px;
+}
+.main p{
+    text-align: center;
+    font-weight: 700;
+}
+.main .btn1{
+    background-color:rgb(43, 95, 239);
+    padding:10px 40px;
+    margin: 10px 350px;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+.btn1:hover{
+    background-color:whitesmoke;
+
+}
+
+
+.abt{
+   background-color: rgb(214, 220, 238);
+}
+.abt .content1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.abt .content1 img{
+    width: 50%;
+    margin-right: 40px;
+}
+.abt .content1 p{
+    padding-top: 20px;
+    line-height: 2;
+    font-style: initial;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.per{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.edu{
+    line-height: 2;
+}
+.edu .first{
+    font-size: 40px;
+    font-weight: 900;
+}
+.edu .sec{
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 12px;
+}
+.small{
+   margin-left: 45%;
+   margin-top: 50px;
+}
+
+.bg{
+    height: 350px;
+    width: 100%;
+    background-image: url(close-up-image-programer-working-his-desk-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+.openion h2{
+    font-size: 30px;
+    margin-right: 200px;
+    margin-top: 80px;
+    border: 1px solid gray;
+    align-content: center;
+    padding:0 20px;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(244, 211, 165);
+    transform: translate(0,-200px);
+    border-radius: 20px;
+}
+.card p{
+    display: inline-block;
+    margin: 30px;
+    color: darkred;
+    font-size: 20px;
+}
+
+.services-bg{
+        display: inline-block;
+        background-image:url(pexels-goumbik-574077.jpg);
+        background-attachment: fixed;
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        width: 100%;
+        position: relative;
+}
+
+.how{
+    height: 500px;
+    color: white;
+}
+.same{
+    display: flex;
+    justify-content: space-around;
+}
+.same img{
+    width: 150px;
+    height: 150px;
+}
+.how h2{
+    text-align: center;
+    font-size: 30px;
+}
+.how p{
+    width: 40%;
+    margin: 0 350px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.col{
+    background-color: azure;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin: 40px auto;
+    height: 90vh;
+    align-items: center;
+}
+.img-sec{
+    width: 400px;
+    height: 400px;
+    border-radius: 40px;
+}
+.fir p{
+   margin: auto 40px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.5;
+}
+.start-now{
+    background-image: url(pexels-divinetechygirl-1181325.jpg);
+    height: 50vh;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+.start-now-btn{
+    display: inline-block;
+    margin:0 500px;
+    width: 100px;
+}
+
+
+
+.our-service{
+    background-image: url(pexels-joshsorenson-1714208.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment:fixed ;
+}
+.our-service h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+    text-shadow: 4px 2px 2px black;
+}
+.programming{
+    box-sizing: border-box;
+    border: 2px solid gray;
+    align-items: center;
+    margin-bottom:50px ;
+    width: 100%;
+    height: 300px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgba(29, 31, 32, 0.568);
+    border-radius: 30px;
+}
+.web img{
+    margin-top: 20px;
+}
+.programming h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.programming p{
+    width: 50%;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+.programming a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-weight: 800;
+}
+.programming a:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px gray solid;
+    color: rgb(209, 209, 255);
+}
+
+
+
+.team{
+    background-color: azure;
+}
+.team-imgs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-imgs div{
+    width: 20%;
+    margin-top: 30px;
+}
+.contact-us{
+    padding-top: 50px;
+    position: relative;
+    background-image: url(pexels-picjumbo-com-55570-225232.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.contact-us .contacts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+
+
+.plog-advices{
+  background-color:rgb(227, 229, 235);
+}
+.plog-content{
+    display: grid;
+    flex-wrap: wrap;
+}
+.plog-meinu{
+    padding: 20px;
+    align-content: center;
+    border-radius: 30px;
+}
+.plog-advices-1{
+    grid-row: 1;
+    grid-column:1;
+    background-color: palevioletred;
+    color: rgb(44, 1, 8);
+    width: 130%;
+    height: 200px;
+
+}
+.plog-advices-2{
+   grid-row: 1;
+   grid-column: 2;
+   margin-left: 200px;
+   width: 40%;
+   height: 460px;
+   border-radius: 30px;
+   position: relative;
+   background-image: url(html-css-collage-concept-with-person\ \(1\).jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: rgb(191, 250, 230);
+}
+.two{
+    width: 130%;
+    grid-row: 2;
+    transform: translate(0px,-230px);
+    display: flex;
+}
+.plog-advices-3{
+   width:50% ;
+   background-color: aquamarine;
+   color: rgb(1, 44, 44);
+   height: 200px;
+}
+.plog-advices-4{
+    width: 50%;
+    background-color: brown;
+    color: rgb(40, 1, 1);
+    height: 200px;
+    transform: translate(30px,0);
+}
+.plog-meinu h3{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.plog-meinu p{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin: auto;
+    width: 70%;
+    font-size: 20px;
+}
+.bg-blog{
+    background-image: url(pexels-kevin-ku-92347-577585.jpg);
+}
+
+.for-user{
+    background-color:rgb(187, 204, 245);
+}
+.for-user-p{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+}
+.for-user-p p{
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+
+.tree{
+    background-color:rgb(209, 216, 216);
+    color: rgb(1, 41, 41);
+    transition: ease;
+}.tree-menu{
+    margin:40px auto;
+    background-color: rgba(47, 79, 79, 0.378);
+    border-radius: 30px;
+}
+.tree-menu-title{
+    padding: 10%;
+    padding-top: 15%;
+    margin-bottom: 20px; 
+    text-align: center;
+    font-weight: 600;  
+    font-size: 25px;
+}
+.tree-menu-content{
+    padding: 5%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+}
+footer{
+    text-align: center;
+    background-color: rgba(14, 14, 62, 0.397);
+    color: white;;
+    height: 40px;
+    padding-top: 20px;
+}
+.taref {
+    font-size: 20px;
+  }
+
+/* إضافة ميديا كويري */
+@media (max-width: 1200px) {
+    .main-style {
+        width: 90%;
+    }
+    .main h1 {
+        font-size: 50px;
+    }
+    .main .btn1 {
+        margin: 10px auto;
+    }
+    .abt .content1 img {
+        width: 70%;
+    }
+    .small {
+        margin-left: 0;
+    }
+    .space {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-imgs div {
+        width: 30%;
+    }
+    .how p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .programming {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0;
+        text-align: center;
+    }
+    .main p, .edu .sec {
+        font-size: 18px;
+    }
+    .abt .content1 {
+        display: block;
+    }
+    .abt .content1 img {
+        width: 100%;
+        margin-right: 0;
+    }
+    nav .navbar .li-nav {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 28px;
+    }
+    .contact-us .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-bg, .bg {
+        height: auto;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
